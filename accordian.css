@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+.accordian .content {
+    /* max-height: 0;
+    overflow: hidden; */
+    display: none;
+}
+
+label::before {
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 12px;
+    content: "+";
+}
+
+.accordian input[type='radio']:checked+label+.content {
+    /* max-height: 200px; */
+    display: block;
+}
+
+.accordian input[type='radio']:checked+label::before {
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 12px;
+    content: "-";
+}
+
+ul {
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    padding: 5px;
+    border: 1px solid black;
+}
